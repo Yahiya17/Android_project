@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relMain"
+    android:visibility="gone"
+    android:background="@color/white"
+    tools:context=".splashScreen">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/erp_animation"
+        android:id="@+id/animationView"
+        />
+
+    <TextView
+        android:id="@+id/acharya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Acharya"
+        android:textColor="#27357A"
+        android:textSize="50dp" />
+
+    <TextView
+        android:id="@+id/erp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="ERP"
+        android:textColor="#FF9800"
+        android:textSize="30dp" />
+
+</RelativeLayout>

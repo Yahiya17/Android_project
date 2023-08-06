@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".My_profile">
+
+    <com.wajahatkarim3.easyflipview.EasyFlipView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:flipOnTouch="true"
+        app:flipEnabled="true"
+        app:flipDuration="400"
+        app:flipType="horizontal"
+        app:flipFrom="front"
+        app:autoFlipBack="false"
+        app:autoFlipBackTime="1000"
+        >
+
+        <!-- Back Layout Goes Here -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            app:cardElevation="20dp"
+            app:cardBackgroundColor="@color/orange"
+            android:background="@drawable/custom_edittext">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="500dp"
+    android:orientation="vertical"
+    android:background="@drawable/orange_flow">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Date of Birth"
+        android:textColor="@color/lightgrey"
+        android:layout_marginStart="20dp"
+        android:id="@+id/dobtxt"
+        android:textSize="23dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="N/A"
+        android:layout_marginTop="20dp"
+        android:id="@+id/dob"
+        android:layout_marginStart="250dp"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dobtxt"
+        android:text="Date of Admission"
+        android:textColor="@color/lightgrey"
+        android:layout_marginStart="20dp"
+        android:id="@+id/admissiontxt"
+        android:textSize="23dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="N/A"
+        android:layout_below="@id/dobtxt"
+        android:id="@+id/admission"
+        android:layout_marginStart="250dp"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/admissiontxt"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/lightgrey"
+        android:layout_marginStart="20dp"
+        android:text="Emergency Conatact Name"
+        android:id="@+id/Emergency_cn_txt"
+        android:textSize="23dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="N/A"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/Emergency_cn_txt"
+        android:id="@+id/Emergency_cn"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Emergency_cn_txt"
+        android:layout_marginTop="40dp"
+        android:text="Emergency Conatact Number"
+        android:textColor="@color/lightgrey"
+        android:layout_marginStart="20dp"
+        android:id="@+id/Emergency_cno_txt"
+        android:textSize="23dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="N/A"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/Emergency_cno_txt"
+        android:id="@+id/Emergency_cno"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Emergency_cno_txt"
+        android:layout_marginTop="40dp"
+        android:text="Local Address"
+        android:textColor="@color/lightgrey"
+        android:layout_marginStart="20dp"
+        android:id="@+id/laddress_txt"
+        android:textSize="23dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="N/A"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/laddress_txt"
+        android:id="@+id/laddress"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/laddress_txt"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/lightgrey"
+        android:layout_marginStart="20dp"
+        android:text="Permanent Address"
+        android:id="@+id/paddress_txt"
+        android:textSize="23dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="N/A"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/paddress_txt"
+        android:id="@+id/paddress"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        />
+</RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Front Layout Goes Here -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            app:cardElevation="20dp"
+            app:cardBackgroundColor="@color/lightgrey"
+            android:background="@drawable/custom_edittext">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="500dp"
+                android:orientation="vertical"
+                android:background="@drawable/orange_flow">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="200dp"
+                    android:text="Md Yahiya Noor"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:id="@+id/name1"
+                    android:textColor="@color/blue"
+                    android:textSize="23dp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name1"
+                    android:text="Email"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:id="@+id/email1"
+                    android:textColor="@color/black"
+                    android:textSize="23dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/email1"
+                    android:text="Phone no"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:id="@+id/phone_no1"
+                    android:textColor="@color/black"
+                    android:textSize="23dp"
+                    />
+
+                <TextView
+                    android:id="@+id/usnp1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:paddingTop="10dp"
+                    android:layout_below="@+id/phone_no1"
+                    android:text="USN:"
+                    android:textColor="@color/black"
+                    android:textSize="23dp" />
+
+                <TextView
+                    android:id="@+id/usn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:layout_below="@id/phone_no1"
+                    android:layout_marginStart="103dp"
+                    android:text="U18AJ22S0323"
+                    android:textColor="@color/black"
+                    android:textSize="23dp" />
+
+                <TextView
+                    android:id="@+id/auidp1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="AUID:"
+                    android:layout_below="@id/usnp1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="50dp"
+                    android:textColor="@color/black"
+                    android:textSize="23dp" />
+
+                <TextView
+                    android:id="@+id/auid1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_below="@id/usnp1"
+                    android:text="AGS22ABCA063"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="23dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/auid1"
+                    android:text="Department"
+                    android:textSize="23dp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="20dp"
+                    android:id="@+id/department"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/auid1"
+                    android:text="N/A"
+                    android:textSize="23dp"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:id="@+id/departmenttxt"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/class1"
+                    android:text="Class"
+                    android:textSize="23dp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="40dp"
+                    android:layout_below="@id/department"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/classtxt"
+                    android:text="N/A"
+                    android:textSize="23dp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="100dp"
+                    android:layout_below="@id/department"
+                    />
+
+                <ImageView
+                    android:layout_width="159dp"
+                    android:layout_height="266dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="97dp"
+                    android:foregroundGravity="center"
+                    android:src="@drawable/profile_pic" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+</LinearLayout>

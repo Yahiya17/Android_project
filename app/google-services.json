@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "326279198296",
+    "project_id": "erp-project-e5be6",
+    "storage_bucket": "erp-project-e5be6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:326279198296:android:ff9b948f0949960d5e3c2d",
+        "android_client_info": {
+          "package_name": "com.example.myapplicatio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "326279198296-jqnt59iv7vnn6kck024h59427bja18rs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlZV8jILVNt9pfn7gGQiqty96o48T5QEU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "326279198296-jqnt59iv7vnn6kck024h59427bja18rs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

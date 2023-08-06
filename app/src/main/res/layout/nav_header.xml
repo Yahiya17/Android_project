@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/profilepic"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:foregroundGravity="center"
+    android:layout_centerHorizontal="true"
+    android:src="@drawable/profile_pic"/>
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Name"
+        android:layout_below="@id/profilepic"
+        android:textColor="@color/black"
+        android:layout_marginTop="21dp"
+        android:foregroundGravity="center"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginLeft="16dp"/>
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="acharya123@acharya.ac.in"
+        android:layout_below="@id/name"
+        android:textColor="@color/lightgrey"
+        android:textSize="12sp"
+        android:layout_marginLeft="16dp"/>
+
+
+
+
+    <View
+        android:layout_below="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/line"/>
+
+
+
+</RelativeLayout>
